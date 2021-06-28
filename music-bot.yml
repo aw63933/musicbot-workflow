@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     
 env:
-  GitHubMail: "anupamwalkerrox@gmail.com"
+  GitHubMail: "singhsamarth656@gmail.com"
   GitHubName: "aw63933" 
 jobs:
   build:
@@ -19,8 +19,8 @@ jobs:
 
        - name: Set Git Configs & Secrets
          run: |
-           git config --global user.email ${GitHubMail}
-           git config --global user.name ${GitHubName}
+           git config --global "singhsamarth656@gmail.com" ${GitHubMail}
+           git config --global "aw63933" ${GitHubName}
            git config --global credential.helper store
            echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
        - name: cloning repo
