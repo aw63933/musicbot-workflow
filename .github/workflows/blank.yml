@@ -19,8 +19,6 @@ jobs:
 
        - name: Set Git Configs & Secrets
          run: |
-           git config --global ${GitHubMail}
-           git config --global ${GitHubName}
            git config --global credential.helper store
            echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
        - name: cloning repo
