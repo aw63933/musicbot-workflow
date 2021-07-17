@@ -26,7 +26,7 @@ jobs:
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/aw63933/personnelbot.git source
+           git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/aw63933/personalbot.git source
        - name: Running Bot
          timeout-minutes: 300
          continue-on-error: true
